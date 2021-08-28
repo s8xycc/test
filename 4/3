@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void)
+{
+	float sum;
+
+	printf("Please enter a number:\n");
+	scanf_s("%f", &sum);
+	printf("The input is %.1f or %.1e.\n", sum, sum);
+
+	return 0;
+}
