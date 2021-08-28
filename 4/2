@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void)
+{
+	char f[40], n[40];
+	int w;
+
+	printf("Please enter you last name and first name:\n");
+	scanf_s("%s%s", n, 40, f, 40);
+	printf("Your last name is \"%s\" and your first name is \"%s\"\n", n, f);
+	printf("b.\"%20s\"\n", n);
+	printf("c.\"%-20s\"\n", n);
+	w = strlen(n);
+	printf("d.\"%*s\"\n", w + 3, n);
+
+	return 0;
+}
